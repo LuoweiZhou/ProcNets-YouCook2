@@ -33,7 +33,7 @@ We provide simple visualization of the generated segments, which can be enabled 
 ### Others
 Our code is mainly based on [Neuraltalk2](https://github.com/karpathy/neuraltalk2) and [Facebook ResNet](https://github.com/facebook/fb.resnet.torch) (thanks to both for releasing their code!). We might release a PyTorch version of ProcNets, please stay tuned! Our follow-up work on dense video captioning (e.g., recipe generation) can be found on my [website](http://luoweizhou.net/cv.html) soon.
 
-Please [contact me](http://luoweizhou.net/contact.html) if you have any trouble running the code. Please cite the following paper if you are using the code.
+Please [contact me](http://luoweizhou.github.io/contact.html) if you have any trouble running the code. Please cite the following paper if you are using the code.
 
 ```
 @article{zhou2017procnets,
