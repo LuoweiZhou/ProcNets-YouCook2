@@ -12,7 +12,7 @@ This repo hosts the source code (Torch) for our work on procedure segmentation a
 
 
 ### Feature
-We provide ResNet-34 feature for 500 uniformly sampled RGB frames per video (see dataset [README](http://youcook2.eecs.umich.edu/static/YouCookII/youcookii_readme.pdf)). To extract feature on your own, follow the instructions: i) Adapt `script/video2frame\_yc2.sh` and `script/videosample.py` to sample frames, ii) Run `extract\_cnnfeat\_resnet\_mscoco.lua` to extract feature for each frame.
+We provide ResNet-34 feature for 500 uniformly sampled RGB frames per video (see dataset [README](http://youcook2.eecs.umich.edu/static/YouCookII/youcookii_readme.pdf)). To extract feature on your own, follow the instructions: i) Adapt `script/video2frame_yc2.sh` and `script/videosample.py` to sample frames, ii) Run `extract_cnnfeat_resnet_mscoco.lua` to extract feature for each frame.
 
 
 ### Training and validation
