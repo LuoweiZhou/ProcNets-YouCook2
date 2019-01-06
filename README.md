@@ -12,7 +12,7 @@ This repo hosts the source code (Torch) for our work on procedure segmentation a
 
 
 ### Feature
-We provide ResNet-34 feature for 500 uniformly sampled RGB frames per video (see dataset [README](http://youcook2.eecs.umich.edu/static/YouCookII/youcookii_readme.pdf)). To extract feature from raw videos on your own, follow the instructions: i) Adapt `script/video2frame\_yc2.sh` and `script/videosample.py` to sample frames, ii) Run `extract\_cnnfeat\_resnet\_mscoco.lua` to extract feature for each frame.
+We provide ResNet-34 feature for 500 uniformly sampled RGB frames per video (see dataset [README](http://youcook2.eecs.umich.edu/static/YouCookII/youcookii_readme.pdf)). To extract feature on your own, follow the instructions: i) Adapt `script/video2frame\_yc2.sh` and `script/videosample.py` to sample frames, ii) Run `extract\_cnnfeat\_resnet\_mscoco.lua` to extract feature for each frame.
 
 
 ### Training and validation
@@ -34,10 +34,27 @@ Make sure you specify `-val_data_folder` and `-val_info_file` to the feature and
 
 We provide our [pre-trained model (59MB)](http://youcook2.eecs.umich.edu/static/pre-trained-model/model_id_procnets-lr4e-5.t7). The Jacc and mIoU scores are shown below. To evaluate the model in terms of precision and recall, refer to `script/eval_recall_precision.py`.
 
-|               | <td colspan=2> validation </td> | <td colspan=2> test </td>  |
-|---------------|:----------:|:----:|:-------:|------|
-| Method        |    Jaccard | mIoU | Jaccard | mIoU |
-| ProcNets-LSTM |       55.3 | 40.9 |    51.5 | 38.0 |
+<table>
+  <tr>
+    <th></th>
+    <th colspan="2">validation</th>
+    <th colspan="2">test</th>
+  </tr>
+  <tr>
+    <td>Method</td>
+    <td>Jaccard</td>
+    <td>mIoU</td>
+    <td>Jaccard</td>
+    <td>mIoU</td>
+  </tr>
+  <tr>
+    <td>ProcNets-LSTM</td>
+    <td>55.3</td>
+    <td>40.9</td>
+    <td>51.5</td>
+    <td>38.0</td>
+  </tr>
+</table>
 
 
 ### Visualization
